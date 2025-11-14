@@ -9,7 +9,7 @@ public class LoginUI {
             .locatedBy("//input[@id='username']");
 
     public static final Target BTN_CONTINUAR = Target.the("BTN CONTINUAR")
-            .locatedBy("//span[contains(.,'Continuar')]");
+            .locatedBy("//button[@data-testid='login-button']");
 
     public static final Target TXT_INVALID_CREDENCIALES = Target.the("TXT INVALID CREDENCIALES")
             .locatedBy("//input[@aria-describedby='username-error']");
@@ -22,4 +22,8 @@ public class LoginUI {
 
     public static final Target BTN_INICIAR_SESION = Target.the("BTN INICIAR SESION")
             .locatedBy("//span[contains(.,'Iniciar sesión')]");
+
+
+
+
 }
