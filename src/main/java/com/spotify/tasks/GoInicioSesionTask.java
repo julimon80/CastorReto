@@ -15,7 +15,7 @@ public class GoInicioSesionTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(HomeUI.BTN_LOGIN, isVisible()).forNoMoreThan(20).seconds(),
+                WaitUntil.the(HomeUI.BTN_LOGIN, isVisible()).forNoMoreThan(25).seconds(),
                 Click.on(HomeUI.BTN_LOGIN)
         );
     }

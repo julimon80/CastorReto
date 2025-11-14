@@ -21,6 +21,7 @@ public class CredencialesCorrectasTask implements Task {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 WaitUntil.the(LoginUI.BTN_CONTINUAR, isVisible()).forNoMoreThan(20).seconds(),
                 Enter.theValue("julianfus@hotmail.com").into(LoginUI.INPUT_USERNAME),
+                WaitUntil.the(LoginUI.BTN_CONTINUAR, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(LoginUI.BTN_CONTINUAR),
                 Condicional.now(),
                 Enter.theValue("Undertaker1995").into(LoginUI.INPUT_PASS),
