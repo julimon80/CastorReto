@@ -9,8 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         features = "src/test/resources/features/",
         glue = {"com.spotify.stepdefinition", "com.spotify.hooks"},
-        snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@addSong"
+        snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class GlobalRunner {
 }
