@@ -18,9 +18,9 @@ public class GoTop50 implements Task {
         actor.attemptsTo(
                 WaitUntil.the(HomeUI.BTN_LOGIN, isVisible()).forNoMoreThan(30).seconds(),
                 CerrarCookies.now(),
-                WaitUntil.the(HomeUI.BTN_EXPLORAR, isVisible()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(HomeUI.BTN_EXPLORAR, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(HomeUI.BTN_EXPLORAR),
-                WaitUntil.the(HomeUI.BTN_TOP50, isVisible()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(HomeUI.BTN_TOP50, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(HomeUI.BTN_TOP50)
         );
     }

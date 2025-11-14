@@ -18,8 +18,7 @@ public class AgregarCancionTask implements Task {
                 WaitUntil.the(HomeUI.BTN_CARD, isVisible()).forNoMoreThan(30).seconds(),
                 Click.on(HomeUI.BTN_CARD),
                 WaitUntil.the(HomeUI.BTN_ADD_SONG, isVisible()).forNoMoreThan(30).seconds(),
-                Click.on(HomeUI.BTN_ADD_SONG),
-                CerrarCookies.now()
+                Click.on(HomeUI.BTN_ADD_SONG)
 
         );
     }

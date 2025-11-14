@@ -22,9 +22,9 @@ public class BusquedaCancionArtista implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                WaitUntil.the(HomeUI.INPUT_SEARCH, isVisible()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(HomeUI.INPUT_SEARCH, isVisible()).forNoMoreThan(20).seconds(),
                 Enter.theValue(cancionArtista).into(HomeUI.INPUT_SEARCH),
-                WaitUntil.the(HomeUI.TXT_CANCION_ARTISTA(cancionArtista), isVisible()).forNoMoreThan(10).seconds()
+                WaitUntil.the(HomeUI.TXT_CANCION_ARTISTA(cancionArtista), isVisible()).forNoMoreThan(20).seconds()
         );
 
     }

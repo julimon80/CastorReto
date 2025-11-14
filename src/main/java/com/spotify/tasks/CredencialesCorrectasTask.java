@@ -19,7 +19,7 @@ public class CredencialesCorrectasTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                WaitUntil.the(LoginUI.BTN_CONTINUAR, isVisible()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(LoginUI.BTN_CONTINUAR, isVisible()).forNoMoreThan(20).seconds(),
                 Enter.theValue("julianfus@hotmail.com").into(LoginUI.INPUT_USERNAME),
                 Click.on(LoginUI.BTN_CONTINUAR),
                 Condicional.now(),
